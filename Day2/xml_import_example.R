@@ -1,4 +1,4 @@
-record<-xmlParse(file = "C:/R-files/xml_record_file.xml")
+record<-xmlParse(file = "C:/R-files/Day2/xml_record_file.xml")
 record
 
 root<-xmlRoot(record)

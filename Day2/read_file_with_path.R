@@ -1,4 +1,4 @@
-path<-file.path("C:/R-files/", "hotdogs.txt")
+path<-file.path("C:/R-files/Day2/", "hotdogs.txt")
 
 hotdogs<-read.table(path,sep="\t",header=TRUE)
 

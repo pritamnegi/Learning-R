@@ -1,7 +1,7 @@
 library("XML")
 # install.packages("XML")
 
-result<-xmlParse(file = "C:/R-files/Records.xml")
+result<-xmlParse(file = "C:/R-files/Day2/Records.xml")
 result
 str(result)
 
@@ -12,7 +12,7 @@ print(rootnode[1])
 
 
 # Convert xml to data frame
-xmldataframe<- xmlToDataFrame("C:/R-files/Records.xml")
+xmldataframe<- xmlToDataFrame("C:/R-files/Day2/Records.xml")
 xmldataframe
 class(xmldataframe)
 
