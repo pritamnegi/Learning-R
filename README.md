@@ -5,7 +5,7 @@ This repository contains all the files that were created by me during 5 day R pr
 
 
 
-## Day 2 - Importing Data in R, Calculating Mean, Median and Mode
+## Day 2 - Importing Data in R and Calculating Mean, Median and Mode
 
 On Day 2, in the first session I learnt reading data from csv,excel and xml files. In the second session I learnt how to calculate mean, median through inbuilt functions and mode through a user defined function. 
 
