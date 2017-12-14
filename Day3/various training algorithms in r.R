@@ -101,3 +101,31 @@ fit<- plsda(x,y,probMethod = "Bayes")
 predictions<- predict(fit, iris[,1:4])
 
 table(predictions, iris$Species)               
+
+
+#Non linear data
+#ML Algorithm
+
+install.packages("RTextTools")
+library(RTextTools)
+
+data<- read.csv("C:/R-files/Day3/sunnyData.csv")
+
+dtMatrix<- create_matrix(data["Text"])
+
+tableOTM<- as.table(dtMatrix)
+
+container<- create_container(dtMatrix, data$IsSunny, trainSize=1:11, virgin=FALSE)
+
+model<- train_model(container, "SVM", kernel = "linear", cost=1)
+
+trace("create_matrix", edit=T)
+predictionData<- list("sunny sunny sunny rainy rainy","rainy rainy rainy rainy", "hello", "","this is another rainy world")
+
+predMatrix<- create_matrix(predictionData, originalMatrix = dtMatrix)
+
+predSize = length(predictionData)
+
+predictionContainer<- create_container(predMatrix, labels=rep(0,predSize),testSize = 1:predSize, virgin=FALSE)
+results <- classify_model(predictionContainer, model)
+results
