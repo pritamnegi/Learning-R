@@ -101,20 +101,31 @@ information.gain(Play.tennis~., data=subset2.data)
 
 
 library("caTools")
+library("caret")
 
 spl<- sample.split(data_record, SplitRatio=0.7)
 ??sample.split
 
+dataTrain = subset(data_record, spl==TRUE)
+dataTrain
 
-dataTrain = subset(data_record, spl=TRUE)
 view(dataTrain)
 ??view
 
 
 dataTest =subset(data_record, spl=FALSE)
+dataTest
 
 resultJ48<- J48(as.factor(Play.tennis)~., dataTrain)
+
 dataTest.pred<- predict(resultJ48, newdata = dataTest)
+
+
 plot(dataTest$Play.tennis,dataTest.pred)
 table(dataTest$Play.tennis,dataTest.pred)
 dataTest.pred
+summary(dataTest.pred)
+
+matrix(dataTest.pred)
+
+confusionMatrix(dataTest.pred,dataTest$Play.tennis)

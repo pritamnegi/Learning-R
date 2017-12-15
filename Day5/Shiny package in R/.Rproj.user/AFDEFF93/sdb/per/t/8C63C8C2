@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(shiny)\n\n\nfluidPage(\n  title(\"Demonstration of text widget\"),\n  sidebarLayout(\n    sidebarPanel(\n      'Enter the Personal Information',\n      textInput(\"Name\", \"Enter your name\", value = \"\"),\n      textInput(\"Age\", \"Enter your Age\", value=\"\")),\n    \n    \n  mainPanel('Personal Information')\n    \n  )\n  \n)\n",
+    "created" : 1513318166757.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1164481382",
+    "id" : "8C63C8C2",
+    "lastKnownWriteTime" : 1513318262,
+    "last_content_update" : 1513318262623,
+    "path" : "~/hello_shiny/building_form_using_shiny/ui.R",
+    "project_path" : "building_form_using_shiny/ui.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

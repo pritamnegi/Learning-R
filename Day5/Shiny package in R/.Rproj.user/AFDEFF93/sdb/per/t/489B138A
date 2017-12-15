@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(shiny)\n\nfunction(input, output){}",
+    "created" : 1513318168189.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3406288863",
+    "id" : "489B138A",
+    "lastKnownWriteTime" : 1513317936,
+    "last_content_update" : 1513317936,
+    "path" : "~/hello_shiny/building_form_using_shiny/server.R",
+    "project_path" : "building_form_using_shiny/server.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
