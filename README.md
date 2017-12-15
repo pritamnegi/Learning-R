@@ -25,7 +25,7 @@ On Day 4, I learnt about two methods of plotting data in variois forms in R. One
 
 
 
-## Shiny Package in R
+## Day 5 - Shiny Package in R
 
 On Day 5,I was introduced to Shiny package in R, which is useful in building webapps for visualizing data processed using R
 
