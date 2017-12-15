@@ -23,3 +23,9 @@ On Day 3, I learnt the concept of clustering and various algorithms like K-means
 
 On Day 4, I learnt about two methods of plotting data in variois forms in R. One through plot function and another through ggplot function.
 
+
+
+## Shiny Package in R
+
+On Day 5,I was introduced to Shiny package in R, which is useful in building webapps for visualizing data processed using R
+
